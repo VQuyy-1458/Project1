@@ -1,4 +1,8 @@
-package Service.Interfaces;
+package Service.Interface_;
 
-public interface IPlayerService {
+import model.Player;
+
+public interface IPlayerService extends IEntityService<Player> {
+    int generateId();
 }
+
