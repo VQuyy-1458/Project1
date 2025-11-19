@@ -1,4 +1,7 @@
-package Service.Interfaces;
+package Service.Interface_;
 
-public interface IPositionService {
+import model.Position;
+
+public interface IPositionService extends IEntityService<Position> {
+    int generateId();
 }
